@@ -136,20 +136,35 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
+// Adiciona o evento de clique para os links de navegação
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
+    handleNavigation(this.innerHTML.toLowerCase());
   });
 }
+
+// Adiciona o evento de clique para os links do portfólio
+const portfolioLinks = document.querySelectorAll(".portfolio-link");
+
+portfolioLinks.forEach(link => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const targetId = link.getAttribute("href").substring(1);
+    handleNavigation(targetId);
+  });
+});
+
+// Função para manipular a navegação
+function handleNavigation(targetPage) {
+  for (let i = 0; i < pages.length; i++) {
+    if (targetPage === pages[i].dataset.page) {
+      pages[i].classList.add("active");
+      navigationLinks[i].classList.add("active");
+      window.scrollTo(0, 0);
+    } else {
+      pages[i].classList.remove("active");
+      navigationLinks[i].classList.remove("active");
+    }
+  }
+}
+
