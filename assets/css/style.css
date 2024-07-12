@@ -442,11 +442,12 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 30px;
 }
 
 
 .social-item .social-link:hover { color: var(--light-gray); }
+
 
 /*-----------------------------------*\
   #links dentro dos portifolios
@@ -1379,7 +1380,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar, article {
-    width: 600px;
+    width: 520px;
     margin-inline: auto;
     padding: 30px;
   }
@@ -1662,7 +1663,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 800px; }
+  .sidebar, article { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
@@ -1781,7 +1782,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar, article {
-    width: 1000px;
+    width: 950px;
     box-shadow: var(--shadow-5);
   }
 
