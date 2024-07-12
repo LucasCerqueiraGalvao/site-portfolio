@@ -136,14 +136,33 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// Adiciona o evento de clique para os links de navegação
+// Function to handle navigation
+function handleNavigation(targetPage) {
+  for (let i = 0; i < pages.length; i++) {
+    if (targetPage === pages[i].dataset.page) {
+      pages[i].classList.add("active");
+      navigationLinks.forEach(navLink => {
+        if (navLink.textContent.trim().toLowerCase() === targetPage.toLowerCase()) {
+          navLink.classList.add("active");
+        } else {
+          navLink.classList.remove("active");
+        }
+      });
+      window.scrollTo(0, 0);
+    } else {
+      pages[i].classList.remove("active");
+    }
+  }
+}
+
+// Adding click event listeners to navigation links
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    handleNavigation(this.innerHTML.toLowerCase());
+    handleNavigation(this.innerHTML.trim().toLowerCase());
   });
 }
 
-// Adiciona o evento de clique para os links do portfólio
+// Adding click event listeners to portfolio links
 const portfolioLinks = document.querySelectorAll(".portfolio-link");
 
 portfolioLinks.forEach(link => {
@@ -153,18 +172,4 @@ portfolioLinks.forEach(link => {
     handleNavigation(targetId);
   });
 });
-
-// Função para manipular a navegação
-function handleNavigation(targetPage) {
-  for (let i = 0; i < pages.length; i++) {
-    if (targetPage === pages[i].dataset.page) {
-      pages[i].classList.add("active");
-      navigationLinks[i].classList.add("active");
-      window.scrollTo(0, 0);
-    } else {
-      pages[i].classList.remove("active");
-      navigationLinks[i].classList.remove("active");
-    }
-  }
-}
 

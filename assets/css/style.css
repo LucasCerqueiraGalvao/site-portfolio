@@ -448,9 +448,24 @@ main {
 
 .social-item .social-link:hover { color: var(--light-gray); }
 
+/*-----------------------------------*\
+  #links dentro dos portifolios
+\*-----------------------------------*/
+
+.social-link2 {
+  color: var(--light-gray-70);
+  font-size: 18px;
+  text-decoration: none; /* Remove o sublinhado */
+  display: flex;
+  align-items: center;
+}
 
 
+.social-link2:hover { color: var(--light-gray); }
 
+.social-link2 ion-icon {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
 
 /*-----------------------------------*\
   #NAVBAR
@@ -507,6 +522,29 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
+
+.about-text ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.about-text li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-text li::before {
+  content: '•'; /* Unicode for bullet */
+  color: rgb(255, 255, 255); /* Change color if needed */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px; /* Adjust size if needed */
+  line-height: 1; /* Ensure it aligns vertically */
+}
 
 
 
@@ -1957,4 +1995,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+html {
+  overflow-y: scroll;
 }
