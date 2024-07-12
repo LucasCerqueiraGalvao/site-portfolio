@@ -1037,6 +1037,12 @@ main {
   animation: scaleUp 0.25s ease forwards;
 }
 
+.project-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 @keyframes scaleUp {
   0% { transform: scale(0.5); }
   100% { transform: scale(1); }

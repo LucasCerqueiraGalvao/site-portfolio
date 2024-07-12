@@ -1,0 +1,54 @@
+from PIL import Image, ImageSequence
+
+def resize_and_crop_gif(input_image_path, output_image_path, crop_width, crop_height):
+    """
+    Redimensiona e corta cada quadro de um GIF para as dimensões especificadas.
+    """
+    with Image.open(input_image_path) as img:
+        frames = []
+        
+        for frame in ImageSequence.Iterator(img):
+            width, height = frame.size
+
+            # Calcular a proporção de aspecto desejada
+            target_ratio = crop_width / crop_height
+            img_ratio = width / height
+
+            if img_ratio > target_ratio:
+                # A imagem é mais larga do que a proporção desejada, ajuste a largura
+                new_height = crop_height
+                new_width = int(new_height * img_ratio)
+            else:
+                # A imagem é mais alta do que a proporção desejada, ajuste a altura
+                new_width = crop_width
+                new_height = int(new_width / img_ratio)
+
+            # Redimensionar a imagem
+            resized_frame = frame.resize((new_width, new_height), Image.LANCZOS)
+
+            # Calcular a posição para cortar a imagem
+            left = (new_width - crop_width) / 2
+            top = (new_height - crop_height) / 2
+            right = (new_width + crop_width) / 2
+            bottom = (new_height + crop_height) / 2
+
+            # Cortar a imagem
+            cropped_frame = resized_frame.crop((left, top, right, bottom))
+            
+            # Adicionar o quadro cortado à lista de quadros
+            frames.append(cropped_frame)
+
+        # Salvar o GIF cortado
+        frames[0].save(output_image_path, save_all=True, append_images=frames[1:], loop=img.info['loop'], duration=img.info['duration'])
+        print(f"GIF redimensionado e cortado salvo como: {output_image_path}")
+
+# Caminho da imagem de entrada e saída
+input_path = r"C:\Users\Lenovo\Desktop\site\site\vcard-personal-portfolio\algoritimos\project.gif"
+output_path = r"C:\Users\Lenovo\Desktop\site\site\vcard-personal-portfolio\algoritimos\project-cut.gif"
+
+# Dimensões desejadas
+crop_width = 600
+crop_height = 450
+
+# Chama a função para redimensionar e cortar o GIF
+resize_and_crop_gif(input_path, output_path, crop_width, crop_height)
