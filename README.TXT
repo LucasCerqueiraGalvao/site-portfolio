@@ -1,1 +1,1 @@
-Estou usando git
+Esses são so códigos para o meu site, ainda não sei o que deve constar no README, então esse texto aqui ficara como placeholder
