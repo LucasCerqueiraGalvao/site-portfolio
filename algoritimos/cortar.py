@@ -37,8 +37,8 @@ def resize_and_crop(input_image_path, output_image_path, crop_width, crop_height
         print(f"Imagem redimensionada e cortada salva como: {output_image_path}")
 
 # Caminho da imagem de entrada e saída
-input_path = r"C:\Users\Lenovo\Desktop\site\site\vcard-personal-portfolio\algoritimos\project.gif"
-output_path = r"C:\Users\Lenovo\Desktop\site\site\vcard-personal-portfolio\algoritimos\projectcut.gif"
+input_path = r"C:\Users\Lenovo\Desktop\site\site\vcard-personal-portfolio\algoritimos\imagem1.png"
+output_path = r"C:\Users\Lenovo\Desktop\site\site\vcard-personal-portfolio\algoritimos\imagem-cut.png"
 
 # Dimensões desejadas
 crop_width = 600
