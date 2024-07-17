@@ -1498,7 +1498,7 @@ textarea.form-input::-webkit-resizer {
 \*-----------------------------------*/
 
 /**
- * responsive larger than 450px screen
+ * responsive not larger than 580px screen
  */
 
  @media (max-width: 580px) {
@@ -1513,13 +1513,13 @@ textarea.form-input::-webkit-resizer {
      * typography
      */
 
-    --fs-1: 22.4px; /* Reduzido em 30% */
-    --fs-2: 16.8px;
-    --fs-3: 18.2px;
-    --fs-4: 12.6px;
-    --fs-6: 10.5px;
-    --fs-7: 10.5px;
-    --fs-8: 8.4px;
+    --fs-1: 25.6px; /* Reduzido em 20% */
+    --fs-2: 19.2px;
+    --fs-3: 20.8px;
+    --fs-4: 14.4px;
+    --fs-6: 12px;
+    --fs-7: 12px;
+    --fs-8: 9.6px;
 
   }
 
@@ -1529,26 +1529,26 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar,
   article {
-    width: 70%; /* 70% da largura da tela */
+    width: 80%; /* 80% da largura da tela */
     margin-inline: auto;
-    padding: 21px; /* Reduzido em 30% */
+    padding: 24px; /* Reduzido em 20% */
   }
 
   .article-title {
     font-weight: var(--fw-600);
-    padding-bottom: 10.5px; /* Reduzido em 30% */
+    padding-bottom: 12px; /* Reduzido em 20% */
   }
 
   .article-title::after {
-    width: 28px; /* Reduzido em 30% */
-    height: 3.5px; /* Reduzido em 30% */
+    width: 32px; /* Reduzido em 20% */
+    height: 4px; /* Reduzido em 20% */
   }
 
   .icon-box {
-    width: 33.6px; /* Reduzido em 30% */
-    height: 33.6px; /* Reduzido em 30% */
-    border-radius: 8.4px; /* Reduzido em 30% */
-    font-size: 12.6px; /* Reduzido em 30% */
+    width: 38.4px; /* Reduzido em 20% */
+    height: 38.4px; /* Reduzido em 20% */
+    border-radius: 9.6px; /* Reduzido em 20% */
+    font-size: 14.4px; /* Reduzido em 20% */
   }
 
   /**
@@ -1556,8 +1556,8 @@ textarea.form-input::-webkit-resizer {
    */
 
   main {
-    margin-top: 42px; /* Reduzido em 30% */
-    margin-bottom: 70px; /* Reduzido em 30% */
+    margin-top: 48px; /* Reduzido em 20% */
+    margin-bottom: 80px; /* Reduzido em 20% */
   }
 
   /**
@@ -1565,38 +1565,38 @@ textarea.form-input::-webkit-resizer {
    */
 
   .sidebar {
-    max-height: 126px; /* Reduzido em 30% */
-    margin-bottom: 21px; /* Reduzido em 30% */
+    max-height: 144px; /* Reduzido em 20% */
+    margin-bottom: 24px; /* Reduzido em 20% */
   }
 
   .sidebar.active {
-    max-height: 408px; /* Reduzido em 30% */
+    max-height: 467.2px; /* Reduzido em 20% */
   }
 
   .sidebar-info {
-    gap: 17.5px; /* Reduzido em 30% */
+    gap: 20px; /* Reduzido em 20% */
   }
 
   .avatar-box {
-    border-radius: 210px; /* Reduzido em 30% */
+    border-radius: 240px; /* Reduzido em 20% */
   }
 
   .avatar-box img {
-    width: 84px; /* Reduzido em 30% */
+    width: 96px; /* Reduzido em 20% */
   }
 
   .info-content .name {
-    margin-bottom: 10.5px; /* Reduzido em 30% */
+    margin-bottom: 12px; /* Reduzido em 20% */
   }
 
   .info-content .title {
-    padding: 3.5px 12.6px; /* Reduzido em 30% */
+    padding: 4px 14.4px; /* Reduzido em 20% */
   }
 
   .info_more-btn {
-    top: -21px; /* Reduzido em 30% */
-    right: -21px; /* Reduzido em 30% */
-    padding: 7px 10.5px; /* Reduzido em 30% */
+    top: -24px; /* Reduzido em 20% */
+    right: -24px; /* Reduzido em 20% */
+    padding: 8px 12px; /* Reduzido em 20% */
   }
 
   .info_more-btn span {
@@ -1609,16 +1609,16 @@ textarea.form-input::-webkit-resizer {
   }
 
   .separator {
-    margin: 22.4px 0; /* Reduzido em 30% */
+    margin: 25.6px 0; /* Reduzido em 20% */
   }
 
   .contacts-list {
-    gap: 14px; /* Reduzido em 30% */
+    gap: 16px; /* Reduzido em 20% */
   }
 
   .contact-info {
-    max-width: calc(70% - 44.8px); /* Reduzido em 30% */
-    width: calc(70% - 44.8px); /* Reduzido em 30% */
+    max-width: calc(80% - 51.2px); /* Reduzido em 20% */
+    width: calc(80% - 51.2px); /* Reduzido em 20% */
   }
 
   /**
@@ -1626,15 +1626,15 @@ textarea.form-input::-webkit-resizer {
    */
 
   .navbar {
-    border-radius: 14px 14px 0 0; /* Reduzido em 30% */
+    border-radius: 16px 16px 0 0; /* Reduzido em 20% */
   }
 
   .navbar-list {
-    gap: 14px; /* Reduzido em 30% */
+    gap: 16px; /* Reduzido em 20% */
   }
 
   .navbar-link {
-    --fs-8: 9.8px; /* Reduzido em 30% */
+    --fs-8: 11.2px; /* Reduzido em 20% */
   }
 
   /**
@@ -1642,11 +1642,11 @@ textarea.form-input::-webkit-resizer {
    */
 
   .about .article-title {
-    margin-bottom: 14px; /* Reduzido em 30% */
+    margin-bottom: 16px; /* Reduzido em 20% */
   }
 
   .about-text {
-    margin-bottom: 28px; /* Reduzido em 30% */
+    margin-bottom: 32px; /* Reduzido em 20% */
   }
 
   /* service */
@@ -1655,13 +1655,13 @@ textarea.form-input::-webkit-resizer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 12.6px; /* Reduzido em 30% */
-    padding: 21px; /* Reduzido em 30% */
+    gap: 14.4px; /* Reduzido em 20% */
+    padding: 24px; /* Reduzido em 20% */
   }
 
   .service-icon-box {
     margin-bottom: 0;
-    margin-top: 3.5px; /* Reduzido em 30% */
+    margin-top: 4px; /* Reduzido em 20% */
   }
 
   .service-content-box {
@@ -1674,13 +1674,13 @@ textarea.form-input::-webkit-resizer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 12.6px; /* Reduzido em 30% */
-    padding: 21px; /* Reduzido em 30% */
+    gap: 14.4px; /* Reduzido em 20% */
+    padding: 24px; /* Reduzido em 20% */
   }
 
   .cv-icon-box {
     margin-bottom: 0;
-    margin-top: 3.5px; /* Reduzido em 30% */
+    margin-top: 4px; /* Reduzido em 20% */
   }
 
   .cv-content-box {
@@ -1690,33 +1690,33 @@ textarea.form-input::-webkit-resizer {
   /* testimonials */
 
   .testimonials-title {
-    margin-bottom: 17.5px; /* Reduzido em 30% */
+    margin-bottom: 20px; /* Reduzido em 20% */
   }
 
   .testimonials-list {
-    gap: 21px; /* Reduzido em 30% */
-    margin: 0 -21px; /* Reduzido em 30% */
-    padding: 21px; /* Reduzido em 30% */
-    padding-bottom: 24.5px; /* Reduzido em 30% */
+    gap: 24px; /* Reduzido em 20% */
+    margin: 0 -24px; /* Reduzido em 20% */
+    padding: 24px; /* Reduzido em 20% */
+    padding-bottom: 28px; /* Reduzido em 20% */
   }
 
   .content-card {
-    padding: 21px; /* Reduzido em 30% */
-    padding-top: 17.5px; /* Reduzido em 30% */
+    padding: 24px; /* Reduzido em 20% */
+    padding-top: 20px; /* Reduzido em 20% */
   }
 
   .testimonials-avatar-box {
-    transform: translate(21px, -21px); /* Reduzido em 30% */
-    border-radius: 14px; /* Reduzido em 30% */
+    transform: translate(24px, -24px); /* Reduzido em 20% */
+    border-radius: 16px; /* Reduzido em 20% */
   }
 
   .testimonials-avatar-box img {
-    width: 56px; /* Reduzido em 30% */
+    width: 64px; /* Reduzido em 20% */
   }
 
   .testimonials-item-title {
-    margin-bottom: 7px; /* Reduzido em 30% */
-    margin-left: 66.5px; /* Reduzido em 30% */
+    margin-bottom: 8px; /* Reduzido em 20% */
+    margin-left: 76px; /* Reduzido em 20% */
   }
 
   .testimonials-text {
@@ -1727,16 +1727,16 @@ textarea.form-input::-webkit-resizer {
   /* testimonials modal */
 
   .modal-container {
-    padding: 14px; /* Reduzido em 30% */
+    padding: 16px; /* Reduzido em 20% */
   }
 
   .testimonials-modal {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-    gap: 17.5px; /* Reduzido em 30% */
-    padding: 21px; /* Reduzido em 30% */
-    border-radius: 14px; /* Reduzido em 30% */
+    gap: 20px; /* Reduzido em 20% */
+    padding: 24px; /* Reduzido em 20% */
+    border-radius: 16px; /* Reduzido em 20% */
   }
 
   .modal-img-wrapper {
@@ -1746,31 +1746,31 @@ textarea.form-input::-webkit-resizer {
   }
 
   .modal-avatar-box {
-    border-radius: 12.6px; /* Reduzido em 30% */
+    border-radius: 14.4px; /* Reduzido em 20% */
     margin-bottom: 0;
   }
 
   .modal-avatar-box img {
-    width: 45.5px; /* Reduzido em 30% */
+    width: 52px; /* Reduzido em 20% */
   }
 
   .modal-img-wrapper>img {
     display: block;
     flex-grow: 1;
-    width: 24.5px; /* Reduzido em 30% */
+    width: 28px; /* Reduzido em 20% */
   }
 
   /* clients */
 
   .clients-list {
-    gap: 35px; /* Reduzido em 30% */
-    margin: 0 -21px; /* Reduzido em 30% */
-    padding: 31.5px; /* Reduzido em 30% */
-    scroll-padding-inline: 31.5px; /* Reduzido em 30% */
+    gap: 40px; /* Reduzido em 20% */
+    margin: 0 -24px; /* Reduzido em 20% */
+    padding: 36px; /* Reduzido em 20% */
+    scroll-padding-inline: 36px; /* Reduzido em 20% */
   }
 
   .clients-item {
-    min-width: calc(70% - 24.5px); /* Reduzido em 30% */
+    min-width: calc(80% - 28px); /* Reduzido em 20% */
   }
 
   /**
@@ -1778,21 +1778,21 @@ textarea.form-input::-webkit-resizer {
    */
 
   .timeline-list {
-    margin-left: 45.5px; /* Reduzido em 30% */
+    margin-left: 52px; /* Reduzido em 20% */
   }
 
   .timeline-item:not(:last-child)::before {
-    left: -28px; /* Reduzido em 30% */
+    left: -32px; /* Reduzido em 20% */
   }
 
   .timeline-item::after {
-    height: 5.6px; /* Reduzido em 30% */
-    width: 5.6px; /* Reduzido em 30% */
-    left: -30.1px; /* Reduzido em 30% */
+    height: 6.4px; /* Reduzido em 20% */
+    width: 6.4px; /* Reduzido em 20% */
+    left: -34.4px; /* Reduzido em 20% */
   }
 
   .skills-item:not(:last-child) {
-    margin-bottom: 17.5px; /* Reduzido em 30% */
+    margin-bottom: 20px; /* Reduzido em 20% */
   }
 
   /**
@@ -1801,15 +1801,15 @@ textarea.form-input::-webkit-resizer {
 
   .project-img,
   .blog-banner-box {
-    border-radius: 11.2px; /* Reduzido em 30% */
+    border-radius: 12.8px; /* Reduzido em 20% */
   }
 
   .blog-posts-list {
-    gap: 21px; /* Reduzido em 30% */
+    gap: 24px; /* Reduzido em 20% */
   }
 
   .blog-content {
-    padding: 17.5px; /* Reduzido em 30% */
+    padding: 20px; /* Reduzido em 20% */
   }
 
   /**
@@ -1817,30 +1817,30 @@ textarea.form-input::-webkit-resizer {
    */
 
   .mapbox {
-    height: 266px; /* Reduzido em 30% */
-    border-radius: 12.6px; /* Reduzido em 30% */
+    height: 304px; /* Reduzido em 20% */
+    border-radius: 14.4px; /* Reduzido em 20% */
   }
 
   .input-wrapper {
-    gap: 21px; /* Reduzido em 30% */
-    margin-bottom: 21px; /* Reduzido em 30% */
+    gap: 24px; /* Reduzido em 20% */
+    margin-bottom: 24px; /* Reduzido em 20% */
   }
 
   .form-input {
-    padding: 10.5px 14px; /* Reduzido em 30% */
+    padding: 12px 16px; /* Reduzido em 20% */
   }
 
   textarea.form-input {
-    margin-bottom: 21px; /* Reduzido em 30% */
+    margin-bottom: 24px; /* Reduzido em 20% */
   }
 
   .form-btn {
-    --fs-6: 11.2px; /* Reduzido em 30% */
-    padding: 11.2px 14px; /* Reduzido em 30% */
+    --fs-6: 12.8px; /* Reduzido em 20% */
+    padding: 12.8px 16px; /* Reduzido em 20% */
   }
 
   .form-btn ion-icon {
-    font-size: 12.6px; /* Reduzido em 30% */
+    font-size: 14.4px; /* Reduzido em 20% */
   }
 
   /**
@@ -1853,6 +1853,8 @@ textarea.form-input::-webkit-resizer {
   }
 
 }
+
+
 
 
 /**
