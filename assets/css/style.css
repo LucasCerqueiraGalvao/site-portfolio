@@ -1528,6 +1528,12 @@ textarea.form-input::-webkit-resizer {
    * #REUSED STYLE
    */
 
+  .social-link2 {
+    font-size: 13px;
+    /* Ajuste o tamanho conforme necessário */
+  }
+
+
   .sidebar,
   article {
     width: 100%;
