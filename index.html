@@ -76,7 +76,8 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="lucas_galvao01@hotmail.com" class="contact-link">lucas_galvao01@hotmail.com</a>
+              <a href="javascript:void(0)" class="contact-link"
+                onclick="copyToClipboard('lucas_galvao01@hotmail.com')">lucas_galvao01@hotmail.com</a>
             </div>
 
           </li>
@@ -115,11 +116,18 @@
               <ion-icon name="location-outline"></ion-icon>
             </div>
 
+
+
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Santos, São Paulo, Brazil</address>
+              <a href="https://www.google.com/maps/place/Santos,+São+Paulo,+Brazil" target="_blank">
+                <address>Santos, São Paulo, Brazil</address>
+              </a>
+
             </div>
+
+
 
           </li>
 
@@ -1128,6 +1136,19 @@
               </a>
             </li>
 
+            <li class="project-item active" data-filter-item data-category="c html/css/javascript git">
+              <a href="#AES encrypt and decrypt with frontend" class="portfolio-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.gif" alt="AES encrypt and decrypt with frontend" loading="lazy">
+                </figure>
+                <h3 class="project-title">AES encrypt and decrypt with frontend</h3>
+                <p class="project-category">C; HTML/CSS/JavaScript; Git</p>
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="c">
               <a href="#maze and the mouse" class="portfolio-link">
 
@@ -1145,21 +1166,6 @@
 
               </a>
             </li>
-
-            <li class="project-item active" data-filter-item data-category="c html/css/javascript git">
-              <a href="#AES encrypt and decrypt with frontend" class="portfolio-link">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-4.gif" alt="AES encrypt and decrypt with frontend" loading="lazy">
-                </figure>
-                <h3 class="project-title">AES encrypt and decrypt with frontend</h3>
-                <p class="project-category">C; HTML/CSS/JavaScript; Git</p>
-              </a>
-            </li>
-
-
 
             <li class="project-item  active" data-filter-item data-category="python">
               <a href="#Cesar Cipher encrypt and decrypt" class="portfolio-link">
@@ -1181,6 +1187,24 @@
               </a>
             </li>
 
+            <li class="project-item  active" data-filter-item data-category="c excel">
+              <a href="#Menu for dataframe analysis" class="portfolio-link">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Menu for dataframe analysis</h3>
+
+                <p class="project-category">C; Excel</p>
+
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item
               data-category="python html/css/javascript sql excel docker git aws">
               <a href="#Booking Registration System" class="portfolio-link">
@@ -1196,24 +1220,6 @@
                 <h3 class="project-title">Booking Registration System</h3>
 
                 <p class="project-category">Python; HTML/CSS/JavaScript; SQL; Excel; Docker; Git; AWS</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="c excel">
-              <a href="#Menu for dataframe analysis" class="portfolio-link">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Menu for dataframe analysis</h3>
-
-                <p class="project-category">C; Excel</p>
 
               </a>
             </li>
@@ -1510,7 +1516,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Portfolio Navigation Structure</h3>
@@ -1583,7 +1589,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="code-slash-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Code Analysis (script.js)</h3>
@@ -1673,7 +1679,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="analytics-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Code Analysis (server.js)</h3>
@@ -1911,40 +1917,149 @@
           breakdown of the
           key components.
 
-          <h3 class="h3">Stack Operations</h3>
-          <ul>
-            <li><strong>initStack</strong>: Initializes the stack.</li>
-            <li><strong>isStackEmpty</strong>: Checks if the stack is empty. Returns 1 if empty, 0 otherwise.</li>
-            <li><strong>push</strong>: Inserts an element at the top of the stack. Does nothing if the stack is full.
-            </li>
-            <li><strong>pop</strong>: Removes and returns the top element of the stack. Returns an invalid position (-1,
-              -1) if the stack is empty.</li>
-          </ul>
-          <h3 class="h3">Maze Loading and Validation</h3>
-          <ul>
-            <li><strong>loadMaze</strong>: Loads a maze from a file. The file format includes the number of rows and
-              columns, followed by the maze layout (0 for open path, X for wall, S for cheese).</li>
-            <li><strong>validateMaze</strong>: Ensures the maze contains valid characters (0, X, S) and at least one
-              exit (S).</li>
-          </ul>
-          <h3 class="h3">Maze Exploration</h3>
-          <ul>
-            <li><strong>exploreMaze</strong>: Uses a stack to perform a depth-first search from a starting position.
-              Marks the path and finds the exit (S).</li>
-            <li><strong>isValidMove</strong>: Checks if a move to a specified position in the maze is valid (either an
-              open path 0 or the cheese S).</li>
-            <li><strong>findExit</strong>: Initiates maze exploration from a given start position to find the exit.</li>
-          </ul>
-          <h3 class="h3">Display Function</h3>
-          <ul>
-            <li><strong>displayMaze</strong>: Clears the console and displays the current state of the maze, marking the
-              explored path and the cheese.</li>
-          </ul>
-
-
           </p>
 
         </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="layers-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Stack Operations</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">initStack</h4>
+              <p class="timeline-text">
+                Initializes the stack.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">isStackEmpty</h4>
+              <p class="timeline-text">
+                Checks if the stack is empty. Returns 1 if empty, 0 otherwise.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">push</h4>
+              <p class="timeline-text">
+                Inserts an element at the top of the stack. Does nothing if the stack is full.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">pop</h4>
+              <p class="timeline-text">
+                Removes and returns the top element of the stack. Returns an invalid position (-1, -1) if the stack is
+                empty.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="file-tray-full-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Maze Loading and Validation</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">loadMaze</h4>
+              <p class="timeline-text">
+                Loads a maze from a file. The file format includes the number of rows and columns, followed by the maze
+                layout (0 for open path, X for wall, S for cheese).
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">validateMaze</h4>
+              <p class="timeline-text">
+                Ensures the maze contains valid characters (0, X, S) and at least one exit (S).
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="compass-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Maze Exploration</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">exploreMaze</h4>
+              <p class="timeline-text">
+                Uses a stack to perform a depth-first search from a starting position. Marks the path and finds the exit
+                (S).
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">isValidMove</h4>
+              <p class="timeline-text">
+                Checks if a move to a specified position in the maze is valid (either an open path 0 or the cheese S).
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">findExit</h4>
+              <p class="timeline-text">
+                Initiates maze exploration from a given start position to find the exit.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Display Function</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Initialize Allegro</h4>
+              <p class="timeline-text">
+                Set up the Allegro library, including initializing display, event queue, and necessary add-ons.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Load Resources</h4>
+              <p class="timeline-text">
+                Load images, fonts, and other resources required for rendering the maze and UI components.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Render Loop</h4>
+              <p class="timeline-text">
+                Implement the main rendering loop to draw the maze, player position, and other elements, refreshing the
+                display at a fixed frame rate.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Event Handling</h4>
+              <p class="timeline-text">
+                Process user inputs and events such as keyboard presses and window close requests within the rendering
+                loop.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Clean Up</h4>
+              <p class="timeline-text">
+                Properly release resources and shut down Allegro components when the program exits.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+
+
 
       </article>
 
@@ -1974,42 +2089,139 @@
           between the frontend and the AES encryption algorithm. This work demonstrates the capability to handle
           advanced encryption, code optimization, and efficient implementation of security algorithms.
 
-          <h3 class="h3">Encryption Algorithm in C</h3>
-          <ul>
-            <li><strong>Algorithm Development</strong>: Implemented AES encryption in C, incorporating key expansion,
-              table-based substitutions, and XOR operations.</li>
-            <li><strong>Data Structures</strong>: Utilized efficient data structures, conditional statements, loops,
-              array manipulations, bitwise operations, buffer manipulations, dynamic memory management, and performance
-              optimization techniques.</li>
-            <li><strong>Functionality</strong>: Developed functions for initializing the stack, checking if the stack is
-              empty, pushing elements onto the stack, and popping elements from the stack.</li>
-            <li><strong>File Handling</strong>: Created functions to load the maze from a file and validate it to ensure
-              correct formatting and the presence of valid characters.</li>
-            <li><strong>Maze Exploration</strong>: Implemented a depth-first search algorithm using a stack to explore
-              the maze from a starting position, marking paths, and finding the exit.</li>
-            <li><strong>Display Function</strong>: Developed a function to clear the console and display the current
-              state of the maze, marking explored paths and the exit point.</li>
-          </ul>
-          <h3 class="h3">Interactive Frontend Development</h3>
-          <ul>
-            <li><strong>HTML/CSS/JavaScript</strong>: Built an interactive frontend that allows users to input a message
-              to encrypt or decrypt, with options selected through a dropdown menu.</li>
-            <li><strong>Form Handling</strong>: Implemented forms for user input, DOM manipulation, input validation,
-              event handling, and dynamic content updates.</li>
-            <li><strong>Responsive Design</strong>: Ensured the interface is intuitive and responsive, adapting to
-              different devices such as tablets, mobile phones, and computers.</li>
-          </ul>
-          <h3 class="h3">API Development in PHP</h3>
-          <ul>
-            <li><strong>Communication Interface</strong>: Created a PHP API to facilitate communication between the
-              frontend and the C-based AES encryption algorithm.</li>
-            <li><strong>RESTful Endpoints</strong>: Developed RESTful endpoints to handle HTTP requests, input, and
-              output data processing.</li>
-            <li><strong>Execution Function</strong>: Utilized the `exec` function in PHP to execute commands on the
-              server, triggering the AES encryption and decryption processes.</li>
-            <li><strong>JSON Responses</strong>: Provided well-structured JSON responses for easy integration with the
-              frontend, including encryption results, input text, encryption key, and action performed.</li>
-          </ul>
+          </p>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Encryption Algorithm in C</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Algorithm Development</h4>
+              <p class="timeline-text">
+                Implemented AES encryption in C, incorporating key expansion, table-based substitutions, and XOR
+                operations.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Structures</h4>
+              <p class="timeline-text">
+                Utilized efficient data structures, conditional statements, loops, array manipulations, bitwise
+                operations, buffer manipulations, dynamic memory management, and performance optimization techniques.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Functionality</h4>
+              <p class="timeline-text">
+                Developed functions for initializing the stack, checking if the stack is empty, pushing elements onto
+                the stack, and popping elements from the stack.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">File Handling</h4>
+              <p class="timeline-text">
+                Created functions to load the maze from a file and validate it to ensure correct formatting and the
+                presence of valid characters.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Maze Exploration</h4>
+              <p class="timeline-text">
+                Implemented a depth-first search algorithm using a stack to explore the maze from a starting position,
+                marking paths, and finding the exit.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Display Function</h4>
+              <p class="timeline-text">
+                Developed a function to clear the console and display the current state of the maze, marking explored
+                paths and the exit point.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="desktop-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Interactive Frontend Development</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">HTML/CSS/JavaScript</h4>
+              <p class="timeline-text">
+                Built an interactive frontend that allows users to input a message to encrypt or decrypt, with options
+                selected through a dropdown menu.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Form Handling</h4>
+              <p class="timeline-text">
+                Implemented forms for user input, DOM manipulation, input validation, event handling, and dynamic
+                content updates.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Responsive Design</h4>
+              <p class="timeline-text">
+                Ensured the interface is intuitive and responsive, adapting to different devices such as tablets,
+                mobile phones, and computers.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+            <h3 class="h3">API Development in PHP</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Communication Interface</h4>
+              <p class="timeline-text">
+                Created a PHP API to facilitate communication between the frontend and the C-based AES encryption
+                algorithm.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">RESTful Endpoints</h4>
+              <p class="timeline-text">
+                Developed RESTful endpoints to handle HTTP requests, input, and output data processing.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Execution Function</h4>
+              <p class="timeline-text">
+                Utilized the `exec` function in PHP to execute commands on the server, triggering the AES encryption
+                and decryption processes.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">JSON Responses</h4>
+              <p class="timeline-text">
+                Provided well-structured JSON responses for easy integration with the frontend, including encryption
+                results, input text, encryption key, and action performed.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="about-text">
+          <p>
+
           <h3 class="h3">Encryption Algorithm in C</h3>
 
           This project involved developing an advanced encryption algorithm using AES (Advanced Encryption Standard) in
@@ -2042,7 +2254,6 @@
         <section class="about-text">
           <p>
 
-
           <h3 class="h3">Project Overview</h3>
 
           This project focuses on encrypting and decrypting messages using a simple Caesar Cipher-like algorithm
@@ -2050,26 +2261,92 @@
           message, while the decryption process requires the correct key to retrieve the original message. This project
           demonstrates skills in string manipulation, random number generation, and basic cryptography principles.
 
-          <h3 class="h3">Encryption Process</h3>
-          <ul>
-            <li><strong>Input Message</strong>: The user inputs the message to be encrypted.</li>
-            <li><strong>Character List</strong>: The input message is converted into a list of characters.</li>
-            <li><strong>Key Generation</strong>: A random key is generated for each character within a specified range
-              (0-100).</li>
-            <li><strong>Encryption</strong>: Each character's ASCII value is incremented by its corresponding key value,
-              resulting in an encrypted message.</li>
-            <li><strong>Output Encrypted Message</strong>: The encrypted message and the key used are printed.</li>
-          </ul>
-          <h3 class="h3">Decryption Process</h3>
-          <ul>
-            <li><strong>Input Encrypted Message</strong>: The user inputs the encrypted message as a list of integers.
+          </p>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Encryption Process</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Input Message</h4>
+              <p class="timeline-text">
+                The user inputs the message to be encrypted.
+              </p>
             </li>
-            <li><strong>Input Key</strong>: The user inputs the key used during encryption as a list of integers.</li>
-            <li><strong>Decryption</strong>: Each encrypted character's value is decremented by its corresponding key
-              value to retrieve the original ASCII value.</li>
-            <li><strong>Output Decrypted Message</strong>: The decrypted message is printed, restoring the original
-              input message.</li>
-          </ul>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Character List</h4>
+              <p class="timeline-text">
+                The input message is converted into a list of characters.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Key Generation</h4>
+              <p class="timeline-text">
+                A random key is generated for each character within a specified range (0-100).
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Encryption</h4>
+              <p class="timeline-text">
+                Each character's ASCII value is incremented by its corresponding key value, resulting in an encrypted
+                message.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Output Encrypted Message</h4>
+              <p class="timeline-text">
+                The encrypted message and the key used are printed.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="key-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Decryption Process</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Input Encrypted Message</h4>
+              <p class="timeline-text">
+                The user inputs the encrypted message as a list of integers.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Input Key</h4>
+              <p class="timeline-text">
+                The user inputs the key used during encryption as a list of integers.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Decryption</h4>
+              <p class="timeline-text">
+                Each encrypted character's value is decremented by its corresponding key value to retrieve the original
+                ASCII value.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Output Decrypted Message</h4>
+              <p class="timeline-text">
+                The decrypted message is printed, restoring the original input message.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="about-text">
+          <p>
 
           <h3 class="h3">Summary</h3>
           This project involved developing a simple encryption and decryption algorithm using Python. The encryption
@@ -2094,45 +2371,123 @@
           <p>
           <h3 class="h3">System Architecture</h3>
 
-          <h3 class="h3">Project Overview</h3>
-
           This project was centered around the strategic development of a new system designed to integrate two distinct
           SQL databases into a seamless online interface using Docker containers. The main objective was to create a
           robust and efficient system capable of handling complex data integration and providing a user-friendly
           interface for end-users.
 
-          <ul>
-            <li><strong>Docker Containers</strong>: Utilized Docker to containerize the entire application, ensuring
-              consistency across different environments and simplifying the deployment process. Each database and
-              service ran in its own isolated container, enhancing security and scalability.</li>
-            <li><strong>Microservices</strong>: Designed the system using a microservices architecture to allow
-              independent development, deployment, and scaling of different components. This approach facilitated easier
-              maintenance and updates.</li>
-          </ul>
-          <h3 class="h3">Database Integration</h3>
-          <ul>
-            <li><strong>SQL Databases</strong>: Integrated two distinct SQL databases, ensuring seamless data flow and
-              synchronization between them. This involved writing complex SQL queries, handling data conflicts, and
-              ensuring data integrity.</li>
-            <li><strong>Database Management</strong>: Implemented efficient database management practices, including
-              indexing, query optimization, and regular backups to maintain high performance and reliability.</li>
-          </ul>
-          <h3 class="h3">Online Interface</h3>
-          <ul>
-            <li><strong>User Interface (UI)</strong>: Developed a responsive and intuitive online interface using modern
-              web technologies (e.g., HTML, CSS, JavaScript). The interface allowed users to interact with the
-              integrated databases effortlessly, providing real-time data access and updates.</li>
-            <li><strong>Backend Integration</strong>: Connected the frontend interface with the backend services using
-              APIs. This included handling user authentication, data validation, and error handling to ensure a smooth
-              user experience.</li>
-          </ul>
-          <h3 class="h3">Security and Compliance</h3>
-          <ul>
-            <li><strong>Data Security</strong>: Ensured data security through encryption, secure access controls, and
-              regular security audits. Docker’s container isolation also added an extra layer of security.</li>
-            <li><strong>Compliance</strong>: Adhered to industry standards and regulations to ensure the system met all
-              compliance requirements, protecting sensitive data and maintaining user trust.</li>
-          </ul>
+          </p>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="cube-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Project Overview</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Docker Containers</h4>
+              <p class="timeline-text">
+                Utilized Docker to containerize the entire application, ensuring consistency across different
+                environments and simplifying the deployment process. Each database and service ran in its own isolated
+                container, enhancing security and scalability.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Microservices</h4>
+              <p class="timeline-text">
+                Designed the system using a microservices architecture to allow independent development, deployment, and
+                scaling of different components. This approach facilitated easier maintenance and updates.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="server-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Database Integration</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">SQL Databases</h4>
+              <p class="timeline-text">
+                Integrated two distinct SQL databases, ensuring seamless data flow and synchronization between them.
+                This involved writing complex SQL queries, handling data conflicts, and ensuring data integrity.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Database Management</h4>
+              <p class="timeline-text">
+                Implemented efficient database management practices, including indexing, query optimization, and regular
+                backups to maintain high performance and reliability.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="globe-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Online Interface</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">User Interface (UI)</h4>
+              <p class="timeline-text">
+                Developed a responsive and intuitive online interface using modern web technologies (e.g., HTML, CSS,
+                JavaScript). The interface allowed users to interact with the integrated databases effortlessly,
+                providing real-time data access and updates.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Backend Integration</h4>
+              <p class="timeline-text">
+                Connected the frontend interface with the backend services using APIs. This included handling user
+                authentication, data validation, and error handling to ensure a smooth user experience.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Security and Compliance</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Security</h4>
+              <p class="timeline-text">
+                Ensured data security through encryption, secure access controls, and regular security audits. Docker’s
+                container isolation also added an extra layer of security.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Compliance</h4>
+              <p class="timeline-text">
+                Adhered to industry standards and regulations to ensure the system met all compliance requirements,
+                protecting sensitive data and maintaining user trust.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="about-text">
+          <p>
 
           <h3 class="h3">Impact and Innovation</h3>
 
@@ -2171,41 +2526,137 @@
           based on user input, showcasing skills in file handling, data structures, and user interaction in a
           command-line interface.
 
-          <h3 class="h3">File Handling and Data Parsing</h3>
-          <ul>
-            <li><strong>File Reading</strong>: The program reads data from a CSV file ("Dadoscsv2.csv") using standard
-              I/O functions in C. It handles potential errors in file opening and ensures data is read correctly.</li>
-            <li><strong>Data Storage</strong>: The data is stored in a three-dimensional array, which allows for
-              efficient access and manipulation. The program tokenizes each line of the CSV to populate this array.</li>
-          </ul>
-          <h3 class="h3">User Interaction</h3>
-          <ul>
-            <li><strong>Menu Interface</strong>: The program provides a user-friendly menu interface with options to
-              display all products, search by cultivation area, production, or by the initial letter of the product
-              name.</li>
-            <li><strong>Input Validation</strong>: The program includes robust input validation to ensure the user
-              provides valid inputs for the various search options.</li>
-          </ul>
-          <h3 class="h3">Search and Display Functions</h3>
-          <ul>
-            <li><strong>Display All Products</strong>: Displays all agricultural products, along with their respective
-              areas and production values, formatted in a readable table.</li>
-            <li><strong>Search by Area</strong>: Allows users to search for products based on the cultivation area,
-              displaying the five products with areas closest to the user-specified value.</li>
-            <li><strong>Search by Production</strong>: Enables users to search for products by production volume,
-              showing the five products with production values nearest to the input value.</li>
-            <li><strong>Search by Initial</strong>: Users can search for products starting with a specific initial,
-              providing a quick way to filter the data.</li>
-          </ul>
-          <h3 class="h3">Technical Implementation</h3>
-          <ul>
-            <li><strong>Data Conversion</strong>: The program converts string data to appropriate numeric types for
-              accurate comparisons and calculations.</li>
-            <li><strong>Sorting and Filtering</strong>: Utilizes sorting and filtering algorithms to identify and
-              display the closest matches for area and production searches.</li>
-            <li><strong>Dynamic Memory Management</strong>: Efficient use of memory management techniques ensures the
-              program runs smoothly even with large datasets.</li>
-          </ul>
+          </p>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="document-outline"></ion-icon>
+            </div>
+            <h3 class="h3">File Handling and Data Parsing</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">File Reading</h4>
+              <p class="timeline-text">
+                The program reads data from a CSV file ("Dadoscsv2.csv") using standard I/O functions in C. It handles
+                potential errors in file opening and ensures data is read correctly.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Storage</h4>
+              <p class="timeline-text">
+                The data is stored in a three-dimensional array, which allows for efficient access and manipulation. The
+                program tokenizes each line of the CSV to populate this array.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+            <h3 class="h3">User Interaction</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Menu Interface</h4>
+              <p class="timeline-text">
+                The program provides a user-friendly menu interface with options to display all products, search by
+                cultivation area, production, or by the initial letter of the product name.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Input Validation</h4>
+              <p class="timeline-text">
+                The program includes robust input validation to ensure the user provides valid inputs for the various
+                search options.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Search and Display Functions</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Display All Products</h4>
+              <p class="timeline-text">
+                Displays all agricultural products, along with their respective areas and production values, formatted
+                in a readable table.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Search by Area</h4>
+              <p class="timeline-text">
+                Allows users to search for products based on the cultivation area, displaying the five products with
+                areas closest to the user-specified value.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Search by Production</h4>
+              <p class="timeline-text">
+                Enables users to search for products by production volume, showing the five products with production
+                values nearest to the input value.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Search by Initial</h4>
+              <p class="timeline-text">
+                Users can search for products starting with a specific initial, providing a quick way to filter the
+                data.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Technical Implementation</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Conversion</h4>
+              <p class="timeline-text">
+                The program converts string data to appropriate numeric types for accurate comparisons and calculations.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Sorting and Filtering</h4>
+              <p class="timeline-text">
+                Utilizes sorting and filtering algorithms to identify and display the closest matches for area and
+                production searches.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Dynamic Memory Management</h4>
+              <p class="timeline-text">
+                Efficient use of memory management techniques ensures the program runs smoothly even with large
+                datasets.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+
+        <section class="about-text">
+          <p>
 
           <h3 class="h3">Summary for Portfolio</h3>
 
