@@ -2699,7 +2699,7 @@
         console.log('Sending data:', data);
 
         try {
-          const response = await axios.post('http://Nodle-Email.sa-east-1.elasticbeanstalk.com/send-email', data, {
+          const response = await axios.post('https://Nodle-Email.sa-east-1.elasticbeanstalk.com/send-email', data, {
             headers: {
               'Content-Type': 'application/json'
             }
@@ -2727,7 +2727,7 @@
             console.error('Axios error message:', error.message);
           }
           console.error('Axios error config:', error.config);
-          alert('Erro ao enviar a mensagem 3. Por favor, tente novamente.');
+          alert('Erro ao enviar a mensagem 4. Por favor, tente novamente.');
         }
       });
     });
