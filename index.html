@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Personal Portfolio</title>
 
+
+  <!--
+    - Axios
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
   <!--
     - favicon
   -->
@@ -1443,29 +1449,27 @@
         </section>
 
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="http://Lenovo-dev.sa-east-1.elasticbeanstalk.com/send-email" method="POST" class="form"
-            data-form>
+          <form id="contactForm" class="form">
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
             <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
+
             </button>
           </form>
 
           <div id="confirmationMessage" style="display:none;">
-            <p>Thank you for your message. We have received it and will get back to you shortly.</p>
+            <br>
+            <h3 class="h3 form-title">Thank you for your message. We have received it and will get back to you shortly.</h3>
           </div>
 
         </section>
-
-
 
       </article>
 
@@ -2681,6 +2685,57 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+      const confirmationMessage = document.getElementById('confirmationMessage');
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Impede o comportamento padrão do formulário
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+        console.log('Sending data:', data);
+
+        try {
+          const response = await axios.post('http://Nodle-Email.sa-east-1.elasticbeanstalk.com/send-email', data, {
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          });
+
+          if (response.status === 200) {
+            console.log('Message sent successfully');
+            form.reset();
+            confirmationMessage.style.display = 'block';
+          } else {
+            console.error('Error sending message:', response.statusText);
+            alert('Erro ao enviar a mensagem. Por favor, tente novamente.');
+          }
+        } catch (error) {
+          if (error.response) {
+            // A requisição foi feita e o servidor respondeu com um código de status que não está na faixa de 2xx
+            console.error('Axios error response data:', error.response.data);
+            console.error('Axios error response status:', error.response.status);
+            console.error('Axios error response headers:', error.response.headers);
+          } else if (error.request) {
+            // A requisição foi feita mas nenhuma resposta foi recebida
+            console.error('Axios error request:', error.request);
+          } else {
+            // Alguma coisa aconteceu na configuração da requisição que acionou um erro
+            console.error('Axios error message:', error.message);
+          }
+          console.error('Axios error config:', error.config);
+          alert('Erro ao enviar a mensagem 2. Por favor, tente novamente.');
+        }
+      });
+    });
+  </script>
+
+
 </body>
+
+
 
 </html>
