@@ -1452,7 +1452,8 @@
           <h3 class="h3 form-title">Contact Form</h3>
           <form id="contactForm" class="form">
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="hidden" name="accessKey" value="9c79ebce-be56-4a6b-a68e-bca8fb285477"> <!-- Required -->
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
@@ -2699,7 +2700,7 @@
         console.log('Sending data:', data);
 
         try {
-          const response = await axios.post('https://Nodle-Email.sa-east-1.elasticbeanstalk.com/send-email', data, {
+          const response = await axios.post('https://api.staticforms.xyz/submit', data, {
             headers: {
               'Content-Type': 'application/json'
             }
