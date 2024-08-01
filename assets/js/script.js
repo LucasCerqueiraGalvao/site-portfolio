@@ -232,7 +232,7 @@ const translations = {
     "Integração de IA personalizada para funcionalidade superior do sistema.": "Tailored AI integration for superior system functionality.",
     "Algoritmo Matemático": "Math Algorithm",
     "Soluções de algoritmos matemáticos de ponta, entregues com precisão especializada.": "Cutting-edge mathematical algorithm solutions delivered with expert precision.",
-    "Currículo": "Resume",
+    
     "Educação": "Education",
     "Faculdade de Tecnologia do Estado de São Paulo (Fatec)": "Faculdade de Tecnologia do Estado de São Paulo (Fatec)",
     "Como um aluno destacado na Unisantos, decidi me inscrever simultaneamente no programa de Análise e Desenvolvimento de Sistemas da Fatec. Isso me permitiu utilizar minhas noites livres de forma eficaz e acelerar minha linha do tempo de graduação na Unisantos.": "As a standout student at Unisantos, I decided to simultaneously enroll in Fatec's Analysis and Systems Development program. This allowed me to utilize my free evenings effectively and accelerate my graduation timeline at Unisantos.",
@@ -242,14 +242,16 @@ const translations = {
     "Me inscrevi no programa de Bacharelado em Física, onde aprendi sobre metodologia científica e matemática avançada, e tive meu primeiro contato com programação. Embora tenha pausado meus estudos em Física, isso me permitiu abraçar totalmente a programação.": "I enrolled in the Bachelor's program in Physics, where I learned about scientific methodology and advanced mathematics, and had my first encounter with programming. Although I paused my studies in Physics, this allowed me to fully embrace programming.",
     "Experiência": "Experience",
     "Assistente de Análise de Dados": "Data Analysis Assistant",
-    "Sou especializado em automação de tarefas, criação avançada de planilhas e extração de dados (scraping). Sou responsável por gerar relatórios detalhados de análise de desempenho usando o Google Analytics, com foco em resultados de marketing. Minha experiência inclui integrar sistemas complexos e desenvolver sistemas de previsão de dados para cotações financeiras e marketing, com forte ênfase em PostgreSQL e Python.": "I specialize in task automation, advanced spreadsheet creation, and data extraction (scraping). I am responsible for generating detailed performance analysis reports using Google Analytics, with a focus on marketing results. My expertise includes integrating complex systems and developing data forecasting systems for financial quotes and marketing, with a strong emphasis on PostgreSQL and Python.",
+    "Sou especializado em automação de tarefas, criação avançada de planilhas e extração de dados": "I specialize in task automation, advanced spreadsheet creation, and data extraction",
+    "Sou responsável por gerar relatórios detalhados de análise de desempenho usando o Google Analytics, com foco em resultados de marketing. Minha experiência inclui integrar sistemas complexos e desenvolver sistemas de previsão de dados para cotações financeiras e marketing, com forte ênfase em PostgreSQL e Python.": "I am responsible for generating detailed performance analysis reports using Google Analytics, with a focus on marketing results. My expertise includes integrating complex systems and developing data forecasting systems for financial quotes and marketing, with a strong emphasis on PostgreSQL and Python.",
     "Atualmente, estou envolvido em um projeto estratégico para desenvolver um novo sistema, utilizando estruturas Docker para integrar dois bancos de dados SQL distintos em uma interface online eficiente. Minhas contribuições são essenciais para a robustez e eficiência do sistema, demonstrando minha capacidade de enfrentar desafios tecnológicos avançados e promover a inovação dentro da organização.": "Currently, I am engaged in a strategic project to develop a new system, utilizing Docker structures to integrate two distinct SQL databases into an efficient online interface. My contributions are essential to the robustness and efficiency of the system, demonstrating my ability to tackle advanced technological challenges and drive innovation within the organization.",
     "Instrutor de Programação": "Programming Instructor",
-    "Como Instrutor de Programação, ensinei jovens mentes a codificar através de aulas envolventes, permitindo-lhes criar projetos e resolver problemas do mundo real.": "As a Programming Instructor, I taught young minds coding through engaging lessons, enabling them to create projects and solve real-world problems.",
+    "Como": "As a",
+    "ensinei jovens mentes a codificar através de aulas envolventes, permitindo-lhes criar projetos e resolver problemas do mundo real.": "I taught young minds coding through engaging lessons, enabling them to create projects and solve real-world problems.",
     "Minhas Habilidades": "My Skills",
     "Inglês": "English",
     "Graduado no CCAA (2018)": "Graduated from CCAA (2018)",
-    "Estou familiarizado com o idioma desde jovem, tendo realizado a maior parte dos meus estudos através do consumo de literatura inteiramente em inglês.": "I have been familiar with the language from a young age, having pursued most of my studies through consuming literature entirely in English.",
+    "Estou familiarizado com o idioma desde jovem, tendo realizado a maior parte dos meus estudos através do consumo de literatura inteiramente em": "I have been familiar with the language from a young age, having pursued most of my studies through consuming literature entirely in",
     "Python": "Python",
     "Ciência de Dados e Aprendizado de Máquina": "Data Science and Machine Learning",
     "Integração e Desenvolvimento de API": "API Integration and Development",
@@ -270,7 +272,8 @@ const translations = {
     "Structs": "Structs",
     "Árvores": "Trees",
     "Grafos": "Graphs",
-    "Desenvolvi um algoritmo de criptografia AES (Advanced Encryption Standard) em C, utilizando estruturas de dados, condicionais, loops, manipulações de matrizes, operações bit a bit, manipulação de buffers, gerenciamento de memória dinâmica e técnicas de otimização de desempenho.": "I developed an AES (Advanced Encryption Standard) encryption algorithm in C, utilizing data structures, conditionals, loops, matrix manipulations, bitwise operations, buffer handling, dynamic memory management, and performance optimization techniques.",
+    "Desenvolvi um algoritmo de criptografia AES" : "I developed an AES",
+    " em C, utilizando estruturas de dados, condicionais, loops, manipulações de matrizes, operações bit a bit, manipulação de buffers, gerenciamento de memória dinâmica e técnicas de otimização de desempenho.":"encryption algorithm in C, utilizing data structures, conditionals, loops, matrix manipulations, bitwise operations, buffer handling, dynamic memory management, and performance optimization techniques.",
     "HTML/CSS/JavaScript": "HTML/CSS/JavaScript",
     "API de armazenamento local e de sessão": "Local and session storage API",
     "Transições e animações": "Transitions and animations",
@@ -309,7 +312,7 @@ const translations = {
 
     //Resume
 
-    "Resume": "Currículo",
+    
     "Education": "Educação",
     "Faculdade de Tecnologia do Estado de São Paulo (Fatec)": "Faculdade de Tecnologia do Estado de São Paulo (Fatec)",
     "As a standout student at Unisantos, I decided to simultaneously enroll in Fatec's Analysis and Systems Development program. This allowed me to utilize my free evenings effectively and accelerate my graduation timeline at Unisantos.": "Como um aluno destacado na Unisantos, decidi me inscrever simultaneamente no programa de Análise e Desenvolvimento de Sistemas da Fatec. Isso me permitiu utilizar minhas noites livres de forma eficaz e acelerar minha linha do tempo de graduação na Unisantos.",
@@ -319,10 +322,12 @@ const translations = {
     "I enrolled in the Bachelor's program in Physics, where I learned about scientific methodology and advanced mathematics, and had my first encounter with programming. Although I paused my studies in Physics, this allowed me to fully embrace programming.": "Me inscrevi no programa de Bacharelado em Física, onde aprendi sobre metodologia científica e matemática avançada, e tive meu primeiro contato com programação. Embora tenha pausado meus estudos em Física, isso me permitiu abraçar totalmente a programação.",
     "Experience": "Experiência",
     "Data Analysis Assistant": "Assistente de Análise de Dados",
-    "I specialize in task automation, advanced spreadsheet creation, and data extraction (scraping). I am responsible for generating detailed performance analysis reports using Google Analytics, with a focus on marketing results. My expertise includes integrating complex systems and developing data forecasting systems for financial quotes and marketing, with a strong emphasis on PostgreSQL and Python.": "Sou especializado em automação de tarefas, criação avançada de planilhas e extração de dados (scraping). Sou responsável por gerar relatórios detalhados de análise de desempenho usando o Google Analytics, com foco em resultados de marketing. Minha experiência inclui integrar sistemas complexos e desenvolver sistemas de previsão de dados para cotações financeiras e marketing, com forte ênfase em PostgreSQL e Python.",
+    "I specialize in task automation, advanced spreadsheet creation, and data extraction": "Sou especializado em automação de tarefas, criação avançada de planilhas e extração de dados",
+    "I am responsible for generating detailed performance analysis reports using Google Analytics, with a focus on marketing results. My expertise includes integrating complex systems and developing data forecasting systems for financial quotes and marketing, with a strong emphasis on PostgreSQL and Python.": "Sou responsável por gerar relatórios detalhados de análise de desempenho usando o Google Analytics, com foco em resultados de marketing. Minha experiência inclui integrar sistemas complexos e desenvolver sistemas de previsão de dados para cotações financeiras e marketing, com forte ênfase em PostgreSQL e Python.",
     "Currently, I am engaged in a strategic project to develop a new system, utilizing Docker structures to integrate two distinct SQL databases into an efficient online interface. My contributions are essential to the robustness and efficiency of the system, demonstrating my ability to tackle advanced technological challenges and drive innovation within the organization.": "Atualmente, estou envolvido em um projeto estratégico para desenvolver um novo sistema, utilizando estruturas Docker para integrar dois bancos de dados SQL distintos em uma interface online eficiente. Minhas contribuições são essenciais para a robustez e eficiência do sistema, demonstrando minha capacidade de enfrentar desafios tecnológicos avançados e promover a inovação dentro da organização.",
     "Programming Instructor": "Instrutor de Programação",
-    "As a Programming Instructor, I taught young minds coding through engaging lessons, enabling them to create projects and solve real-world problems.": "Como Instrutor de Programação, ensinei jovens mentes a codificar através de aulas envolventes, permitindo-lhes criar projetos e resolver problemas do mundo real.",
+    "As a": "Como",
+    "I taught young minds coding through engaging lessons, enabling them to create projects and solve real-world problems.": " ensinei jovens mentes a codificar através de aulas envolventes, permitindo-lhes criar projetos e resolver problemas do mundo real.",
     "My Skills": "Minhas Habilidades",
     "English": "Inglês",
     "Graduated from CCAA (2018)": "Graduado no CCAA (2018)",
@@ -347,7 +352,8 @@ const translations = {
     "Structs": "Structs",
     "Trees": "Árvores",
     "Graphs": "Grafos",
-    " encryption algorithm in C, utilizing data structures, conditionals, loops, matrix manipulations, bitwise operations, buffer handling, dynamic memory management, and performance optimization techniques.": "Desenvolvi um algoritmo de criptografia AES (Advanced Encryption Standard) em C, utilizando estruturas de dados, condicionais, loops, manipulações de matrizes, operações bit a bit, manipulação de buffers, gerenciamento de memória dinâmica e técnicas de otimização de desempenho.",
+    "I developed an AES": "Desenvolvi um algoritmo de criptografia AES",
+    "encryption algorithm in C, utilizing data structures, conditionals, loops, matrix manipulations, bitwise operations, buffer handling, dynamic memory management, and performance optimization techniques.": " em C, utilizando estruturas de dados, condicionais, loops, manipulações de matrizes, operações bit a bit, manipulação de buffers, gerenciamento de memória dinâmica e técnicas de otimização de desempenho.",
     "HTML/CSS/JavaScript": "HTML/CSS/JavaScript",
     "Local and session storage API": "API de armazenamento local e de sessão",
     "Transitions and animations": "Transições e animações",
@@ -361,6 +367,10 @@ const translations = {
 
   }
 };
+
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
 
 function translatePage(language) {
   const langTranslations = translations[language];
