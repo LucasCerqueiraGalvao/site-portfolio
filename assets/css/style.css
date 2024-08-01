@@ -2738,6 +2738,40 @@ textarea.form-input::-webkit-resizer {
 
 }
 
+/**
+	 * TRANSLATE
+	 */
+
+.flag-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.flag-br {
+  background-image: url('../assets/images/BANDEIRA BR.png');
+  /* Caminho relativo */
+}
+
+.flag-en {
+  background-image: url('../assets/images/BANDEIRA USA.png');
+  /* Caminho relativo */
+}
+
+.flag-text {
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+/**
+	 * TRANSLATE
+	 */
+
+
 html {
   overflow-y: scroll;
 }
