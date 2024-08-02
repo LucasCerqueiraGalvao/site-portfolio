@@ -2744,7 +2744,7 @@ textarea.form-input::-webkit-resizer {
 
 .flag-icon {
   width: 30px;
-  height: 30px;
+  height: 20px;
   display: inline-block;
   background-size: cover;
 }
