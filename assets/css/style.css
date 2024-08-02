@@ -1607,10 +1607,10 @@ textarea.form-input::-webkit-resizer {
     /* Reduzido em 20% */
     margin-bottom: 24px;
     /* Reduzido em 20% */
-  }
+    }
 
   .sidebar.active {
-    max-height: 467.2px;
+    max-height: 584px;
     /* Reduzido em 20% */
   }
 
@@ -1973,6 +1973,8 @@ textarea.form-input::-webkit-resizer {
    * CUSTOM PROPERTY
    */
 
+   
+
   :root {
 
     /**
@@ -2001,6 +2003,8 @@ textarea.form-input::-webkit-resizer {
     margin-inline: auto;
     padding: 30px;
   }
+
+  
 
   .article-title {
     font-weight: var(--fw-600);
