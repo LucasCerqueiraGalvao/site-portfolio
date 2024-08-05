@@ -951,6 +951,15 @@ document.addEventListener('click', function (event) {
     console.log("Traduzindo para EN");
     translatePage('en');
   }
+
+  function adjustIframeHeight() {
+    var iframe = document.getElementById('responsive-iframe');
+    var width = iframe.offsetWidth;
+    iframe.style.height = (width * 0.65) + 'px';
+  }
+
+  window.addEventListener('resize', adjustIframeHeight);
+  window.addEventListener('load', adjustIframeHeight);
 });
 
 

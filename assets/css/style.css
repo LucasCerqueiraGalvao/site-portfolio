@@ -3191,3 +3191,8 @@ textarea.form-input::-webkit-resizer {
 html {
   overflow-y: scroll;
 }
+
+.responsive-iframe {
+  width: 100%;
+  border: none;
+}
