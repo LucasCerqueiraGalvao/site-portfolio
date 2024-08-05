@@ -952,15 +952,26 @@ document.addEventListener('click', function (event) {
     translatePage('en');
   }
 
+});
+
+document.addEventListener('DOMContentLoaded', function() {
   function adjustIframeHeight() {
     var iframe = document.getElementById('responsive-iframe');
-    var width = iframe.offsetWidth;
-    iframe.style.height = (width * 0.65) + 'px';
+    if (iframe) {
+      var width = iframe.offsetWidth;
+      iframe.style.height = (width * 0.65) + 'px';
+    }
   }
 
-  window.addEventListener('resize', adjustIframeHeight);
-  window.addEventListener('load', adjustIframeHeight);
+  adjustIframeHeight(); // Ajusta a altura quando o DOM é carregado
+
+  window.addEventListener('resize', adjustIframeHeight); // Ajusta a altura ao redimensionar a janela
+
+  // Garante que a altura seja ajustada quando o iframe for carregado
+  var iframe = document.getElementById('responsive-iframe');
+  iframe.addEventListener('load', adjustIframeHeight);
 });
+
 
 
 
