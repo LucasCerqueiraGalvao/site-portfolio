@@ -3196,3 +3196,25 @@ html {
   width: 100%;
   border: none;
 }
+
+/**
+	 * TECH-LIST
+	 */
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  gap: 15px; /* Espaçamento entre os ícones */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-list li {
+  display: flex;
+  align-items: center;
+}
+
+.tech-list ion-icon {
+  font-size: 30px; /* Tamanho dos ícones */
+}
