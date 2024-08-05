@@ -170,7 +170,7 @@
           <!--
       - #bandeiras
       -->
-    
+
           <li class="social-item">
             <a id="translate-br" class="social-link" href="javascript:void(0);">
               <img src="./assets/images/BANDEIRA-BR.png" alt="Português" class="flag-icon">
@@ -182,7 +182,7 @@
             </a>
           </li>
 
-          
+
 
 
         </ul>
@@ -210,7 +210,11 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link>Home</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
@@ -237,15 +241,132 @@
 
       </nav>
 
+      <!--
+        - #HOME
+      -->
+
+      <article class="home active" data-page="home">
+
+        <header>
+          <h2 class="h2 article-title">Homepage</h2>
+        </header>
+
+        <section class="home-text">
+          <p>
+
+            Hello! I am passionate about transforming data into intelligent decisions and innovative solutions.
+
+            <br><br>
+
+            Explore my portfolio and discover how I can contribute to the success of your project.
 
 
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <a href="#about" class="portfolio-link">
+
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-about.png" alt="power bi icon" width="60">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">about</h4>
+
+                  <p class="service-item-text">
+                    Learn more about me and my journey.
+                  </p>
+                </div>
+
+              </li>
+
+            </a>
+
+            <a href="#resume" class="portfolio-link">
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-resume.png" alt="power bi icon" width="60">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Resume</h4>
+
+                  <p class="service-item-text">
+                    Check out my resume and qualifications.
+                  </p>
+                </div>
+
+              </li>
+            </a>
+
+            <a href="#portfolio" class="portfolio-link">
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-portifolio.png" alt="mobile app icon" width="60">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Portfolio</h4>
+
+                  <p class="service-item-text">
+                    See some of the projects I've worked on.
+                  </p>
+                </div>
+
+              </li>
+            </a>
+
+            <a href="#contact" class="portfolio-link">
+              <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-contact.png" alt="camera icon" width="60">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Contact</h4>
+
+                  <p class="service-item-text">
+                    Get in touch and let's discuss your needs.
+                  </p>
+
+                </div>
+
+              </li>
+            </a>
+
+          </ul>
+
+          <!--
+          - CV
+        -->
+
+        </section>
+
+      </article>
 
 
       <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about" data-page="about" id="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -288,7 +409,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What i'm studying</h3>
 
           <ul class="service-list">
 
@@ -360,11 +481,13 @@
 
           </ul>
 
+        </section>
+
           <!--
           - CV
         -->
 
-        </section>
+        
         <!--
         <section class="cv">
 
@@ -606,7 +729,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume" data-page-pt="currículo">
+      <article class="resume" data-page="resume" id="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -1006,7 +1129,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="portfolio" id="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -1824,7 +1947,7 @@
 
           </p>
 
-          <iframe title="Power BI Final" width="850" height="550"
+          <iframe title="Power BI Final" width="100%" height="550"
             src="https://app.powerbi.com/view?r=eyJrIjoiNjQxNTAyZTktMGZiMC00MjJlLTg3N2EtNjA1NzJjNWMwZjk1IiwidCI6IjI5NDZhMjA5LWZhNzItNGE5ZS1hMTE0LWViYzhkNDNlNjcwYyJ9"
             frameborder="0" allowFullScreen="true"></iframe>
 

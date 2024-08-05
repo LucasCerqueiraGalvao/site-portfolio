@@ -1,7 +1,7 @@
 from PIL import Image
 
 # Carrega a imagem
-image_path = "C:\\Users\\Lenovo\\Desktop\\site\\site\\vcard-personal-portfolio\\algoritimos\\imagem1.png"
+image_path = "C:\\Users\\Lenovo\\Desktop\\site\\Site-Portifolio\\algoritimos\\imagem1.png"
 image = Image.open(image_path).convert("RGBA")
 
 # Converte a imagem para uma lista de pixels
@@ -22,5 +22,5 @@ for item in data:
 image.putdata(new_data)
 
 # Salva a imagem
-output_path = "C:\\Users\\Lenovo\\Desktop\\site\\site\\vcard-personal-portfolio\\algoritimos\\imagem_com_cor_alterada.png"
+output_path = "C:\\Users\\Lenovo\\Desktop\\site\\Site-Portifolio\\algoritimos\\imagem2.png"
 image.save(output_path)

@@ -211,7 +211,8 @@ const translations = {
     "Busco uma oportunidade desafiadora para aplicar minhas habilidades em ciência de dados e programação, trazendo inovação e eficiência.": "I seek a challenging opportunity to apply my data science and programming skills, bringing innovation and efficiency.",
     "Meu objetivo é alcançar um cargo de liderança, com paixão por aprendizado contínuo e tecnologia de ponta como meu principal diferencial.": "My goal is to reach a leadership role, with a passion for continuous learning and cutting-edge technology as my key differentiator.",
 
-    "O que eu faço": "What i'm doing",
+    
+    "O que eu estou estudando": "What i'm studying",
     "Ciência de Dados": "Data Science",
     "As soluções de ciência de dados mais modernas e de alta qualidade, criadas em um nível profissional.": "The most modern and high-quality data science solutions created at a professional level.",
     "Aprendizado de Máquina": "Machine Learning",
@@ -535,6 +536,22 @@ const translations = {
     "Limpeza": "Clean Up",
     "Libera corretamente os recursos e encerra os componentes do Allegro quando o programa é finalizado.": "Properly release resources and shut down Allegro components when the program exits.",
 
+    //HomePage
+
+    "Página Inicial": "Homepage",
+    "Olá! Sou apaixonado por transformar dados em decisões inteligentes e soluções inovadoras.": "Hello! I am passionate about transforming data into intelligent decisions and innovative solutions.",
+    "Explore meu portfólio e descubra como posso contribuir para o sucesso do seu projeto.": "Explore my portfolio and discover how I can contribute to the success of your project.",
+    "O que estou fazendo": "What I'm doing",
+    //"sobre": "about",
+    "Saiba mais":"Learn more",
+    "mim e minha trajetória" : "me and my journey",
+    //"Currículo": "Resume",
+    "Confira meu currículo e qualificações.": "Check out my resume and qualifications.",
+    //"Portfólio": "Portfolio",
+    "Veja alguns dos projetos em que trabalhei.": "See some of the projects I've worked on.",
+    //"Contato": "Contact",
+    "Entre em contato e vamos discutir suas necessidades.": "Get in touch and let's discuss your needs.",
+
 
   },
 
@@ -549,7 +566,7 @@ const translations = {
     "I seek a challenging opportunity to apply my data science and programming skills, bringing innovation and efficiency.": "Busco uma oportunidade desafiadora para aplicar minhas habilidades em ciência de dados e programação, trazendo inovação e eficiência.",
     "My goal is to reach a leadership role, with a passion for continuous learning and cutting-edge technology as my key differentiator.": "Meu objetivo é alcançar um cargo de liderança, com paixão por aprendizado contínuo e tecnologia de ponta como meu principal diferencial.",
 
-    "What i'm doing": "O que eu faço",
+    "What i'm studying": "O que eu estou estudando",
     "Data Science": "Ciência de Dados",
     "The most modern and high-quality data science solutions created at a professional level.": "As soluções de ciência de dados mais modernas e de alta qualidade, criadas em um nível profissional.",
     "Machine Learning": "Aprendizado de Máquina",
@@ -866,6 +883,23 @@ const translations = {
     "Process user inputs and events such as keyboard presses and window close requests within the rendering loop.": "Processa entradas do usuário e eventos como pressionamentos de teclas e solicitações de fechamento de janela dentro do loop de renderização.",
     "Clean Up": "Limpeza",
     "Properly release resources and shut down Allegro components when the program exits.": "Libera corretamente os recursos e encerra os componentes do Allegro quando o programa é finalizado.",
+
+    //HomePage
+
+    "Homepage": "Página Inicial",
+    "Hello! I am passionate about transforming data into intelligent decisions and innovative solutions.": "Olá! Sou apaixonado por transformar dados em decisões inteligentes e soluções inovadoras.",
+    "Explore my portfolio and discover how I can contribute to the success of your project.": "Explore meu portfólio e descubra como posso contribuir para o sucesso do seu projeto.",
+    "What I'm doing": "O que estou fazendo",
+    //"about": "sobre",
+    "Learn more":"Saiba mais",
+    "me and my journey": "mim e minha trajetória",
+    //"Resume": "Currículo",
+    "Check out my resume and qualifications.": "Confira meu currículo e qualificações.",
+    //"Portfolio": "Portfólio",
+    "See some of the projects I've worked on.": "Veja alguns dos projetos em que trabalhei.",
+    //"Contact": "Contato",
+    "Get in touch and let's discuss your needs.": "Entre em contato e vamos discutir suas necessidades.",
+
 
   }
 };
