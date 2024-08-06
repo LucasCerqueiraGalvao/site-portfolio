@@ -3234,7 +3234,7 @@ html {
 /**
 	 * custom-icon
 	 */
-
+   
    .tech-list {
     list-style: none;
     padding: 0;
@@ -3249,10 +3249,16 @@ html {
     display: inline-block;
   }
   
+  .tech-list ion-icon,
+  .tech-list img.custom-icon {
+    width: 30px; /* Defina a largura desejada */
+    height: 30px; /* Defina a altura desejada */
+  }
+  
   .tooltip::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 125%; /* Adjust as needed */
+    bottom: 125%; /* Ajuste conforme necessário */
     left: 50%;
     transform: translateX(-50%);
     background-color: black;
