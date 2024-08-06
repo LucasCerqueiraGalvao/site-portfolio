@@ -541,7 +541,9 @@ const translations = {
     "Página Inicial": "Homepage",
     "Olá! Sou apaixonado por transformar dados em decisões inteligentes e soluções inovadoras.": "Hello! I am passionate about transforming data into intelligent decisions and innovative solutions.",
     "Explore meu portfólio e descubra como posso contribuir para o sucesso do seu projeto.": "Explore my portfolio and discover how I can contribute to the success of your project.",
-    "O que estou fazendo": "What I'm doing",
+    "Tecnologias" : "Technologies",
+    
+    "Descubra Mais": "Find Out More",
     //"sobre": "about",
     "Saiba mais sobre":"Learn more about",
     "mim e minha trajetória" : "me and my journey",
@@ -889,7 +891,9 @@ const translations = {
     "Homepage": "Página Inicial",
     "Hello! I am passionate about transforming data into intelligent decisions and innovative solutions.": "Olá! Sou apaixonado por transformar dados em decisões inteligentes e soluções inovadoras.",
     "Explore my portfolio and discover how I can contribute to the success of your project.": "Explore meu portfólio e descubra como posso contribuir para o sucesso do seu projeto.",
-    "What I'm doing": "O que estou fazendo",
+    "Technologies" : "Tecnologias",
+    
+    "Find Out More" : "Descubra Mais",
     //"about": "sobre",
     "Learn more about":"Saiba mais sobre",
     "me and my journey": "mim e minha trajetória",

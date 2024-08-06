@@ -1994,7 +1994,7 @@ textarea.form-input::-webkit-resizer {
     /* Reduzido em 20% */
     margin-bottom: 24px;
     /* Reduzido em 20% */
-    }
+  }
 
   .sidebar.active {
     max-height: 584px;
@@ -2084,7 +2084,7 @@ textarea.form-input::-webkit-resizer {
    * #HOME
    */
 
-   .home .article-title {
+  .home .article-title {
     margin-bottom: 16px;
     /* Reduzido em 20% */
   }
@@ -2374,7 +2374,7 @@ textarea.form-input::-webkit-resizer {
    * CUSTOM PROPERTY
    */
 
-   
+
 
   :root {
 
@@ -2405,7 +2405,7 @@ textarea.form-input::-webkit-resizer {
     padding: 30px;
   }
 
-  
+
 
   .article-title {
     font-weight: var(--fw-600);
@@ -2520,7 +2520,7 @@ textarea.form-input::-webkit-resizer {
    * #HOME
    */
 
-   .home .article-title {
+  .home .article-title {
     margin-bottom: 20px;
   }
 
@@ -3200,11 +3200,19 @@ html {
 /**
 	 * TECH-LIST
 	 */
+.custom-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  filter: brightness(84%);
+  /* Ajusta o brilho para obter a cor desejada */
+}
 
 .tech-list {
   display: flex;
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
-  gap: 15px; /* Espaçamento entre os ícones */
+  flex-wrap: wrap;
+  gap: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -3216,5 +3224,50 @@ html {
 }
 
 .tech-list ion-icon {
-  font-size: 30px; /* Tamanho dos ícones */
+  width: 30px;
+  height: 30px;
+  color: hsl(0, 0%, 84%);
+  /* Aplica a cor aos ícones */
 }
+
+
+/**
+	 * custom-icon
+	 */
+
+   .tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .tech-list li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+  }
+  
+  .tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
