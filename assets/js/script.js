@@ -1,11 +1,7 @@
 'use strict';
 
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
@@ -13,8 +9,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
 
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
@@ -53,8 +47,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
-
-
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
@@ -74,7 +66,6 @@ for (let i = 0; i < selectItems.length; i++) {
   });
 }
 
-
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
@@ -92,7 +83,6 @@ const filterFunc = function (selectedValue) {
   }
 }
 
-
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
 
@@ -107,9 +97,6 @@ for (let i = 0; i < filterBtn.length; i++) {
     lastClickedBtn = this;
   });
 }
-
-
-
 
 // contact form variables
 const form = document.querySelector("[data-form]");
@@ -129,8 +116,6 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
-
-
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
@@ -211,7 +196,6 @@ const translations = {
     "Busco uma oportunidade desafiadora para aplicar minhas habilidades em ciência de dados e programação, trazendo inovação e eficiência.": "I seek a challenging opportunity to apply my data science and programming skills, bringing innovation and efficiency.",
     "Meu objetivo é alcançar um cargo de liderança, com paixão por aprendizado contínuo e tecnologia de ponta como meu principal diferencial.": "My goal is to reach a leadership role, with a passion for continuous learning and cutting-edge technology as my key differentiator.",
 
-    
     "O que eu estou estudando": "What i'm studying",
     "Ciência de Dados": "Data Science",
     "As soluções de ciência de dados mais modernas e de alta qualidade, criadas em um nível profissional.": "The most modern and high-quality data science solutions created at a professional level.",
@@ -554,7 +538,6 @@ const translations = {
     //"Contato": "Contact",
     "Entre em contato e vamos discutir suas necessidades.": "Get in touch and let's discuss your needs.",
 
-
   },
 
   "pt": {
@@ -579,7 +562,6 @@ const translations = {
     "Cutting-edge mathematical algorithm solutions delivered with expert precision.": "Soluções de algoritmos matemáticos de ponta, entregues com precisão especializada.",
 
     //Resume
-
 
     "Education": "Educação",
     "Faculdade de Tecnologia do Estado de São Paulo (Fatec)": "Faculdade de Tecnologia do Estado de São Paulo (Fatec)",
@@ -904,7 +886,6 @@ const translations = {
     //"Contact": "Contato",
     "Get in touch and let's discuss your needs.": "Entre em contato e vamos discutir suas necessidades.",
 
-
   }
 };
 
@@ -957,28 +938,5 @@ document.addEventListener('click', function (event) {
   }
 
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  function adjustIframeHeight() {
-    var iframe = document.getElementById('responsive-iframe');
-    if (iframe) {
-      var width = iframe.offsetWidth;
-      iframe.style.height = (width * 0.65) + 'px';
-    }
-  }
-
-  adjustIframeHeight(); // Ajusta a altura quando o DOM é carregado
-
-  window.addEventListener('resize', adjustIframeHeight); // Ajusta a altura ao redimensionar a janela
-
-  // Garante que a altura seja ajustada quando o iframe for carregado
-  var iframe = document.getElementById('responsive-iframe');
-  iframe.addEventListener('load', adjustIframeHeight);
-});
-
-
-
-
-
 
 
