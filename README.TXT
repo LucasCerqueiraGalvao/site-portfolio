@@ -1,4 +1,4 @@
-# Site de Portfólio
+# Site de Portfólio.
 
 Bem-vindo ao repositório do meu site de portfólio. Este projeto tem como objetivo apresentar meus projetos, habilidades e informações de contato de forma profissional e visualmente atraente.
 
