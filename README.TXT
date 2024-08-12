@@ -32,7 +32,7 @@ Bem-vindo ao repositório do meu site de portfólio. Este projeto tem como objet
 
 ### Pré-requisitos
 
-- [Node.js](https://nodejs.org/en/) instalado.
+- [Node.js](https://nodejs.org/en/) instalado
 
 ### Passos
 
